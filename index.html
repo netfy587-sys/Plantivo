@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plantivo – Grow Your Own Herbs and Vegetables: A Beginner's Home Garden Guide</title>
+<meta name="description" content="Plantivo is an educational guide to growing herbs and vegetables at home: choosing containers, soil, sunlight, easy crops, watering, composting and seasonal planting tips for small spaces.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B1%3C/text%3E%3C/svg%3E">
+<style>
+:root{--lime:#7cb342;--deep:#1e3a28;--tom:#d9432b;--sun:#f4b942;--cream:#fdfbf4;--leafbg:#eef5e1;--ink:#202a22;--mut:#5a665c;--w:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.75;font-size:17.5px}
+h1,h2,h3,.badge{font-family:'Trebuchet MS','Segoe UI',Arial,sans-serif}
+a{color:var(--deep)}
+img{max-width:100%;display:block}
+.wrap{width:100%;max-width:1220px;margin:0 auto;padding:0 26px}
+header{background:var(--w);border-bottom:3px solid var(--lime);position:sticky;top:0;z-index:10}
+header .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding-top:14px;padding-bottom:14px}
+.logo{font:800 26px 'Trebuchet MS',Arial,sans-serif;color:var(--deep);text-decoration:none}
+.logo b{color:var(--tom)}
+nav a{color:var(--deep);text-decoration:none;margin-left:22px;font-size:15px;font-weight:600}
+nav a:hover{color:var(--tom)}
+.hero{background:var(--leafbg)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center;padding-top:70px;padding-bottom:70px}
+.badge{display:inline-block;background:var(--deep);color:#d8efb8;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:6px 16px;border-radius:4px;margin-bottom:20px}
+h1{font-size:clamp(33px,4.6vw,54px);line-height:1.14;color:var(--deep);margin-bottom:20px}
+h1 em{font-style:normal;color:var(--tom)}
+.hero p{font-size:19.5px;color:var(--mut);max-width:560px;margin-bottom:28px}
+.btn{display:inline-block;background:var(--tom);color:#fff;text-decoration:none;font-weight:700;padding:14px 30px;border-radius:6px;font-size:16px}
+.btn:hover{background:#e8553d}
+.collage{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:200px 200px;gap:14px}
+.collage img{width:100%;height:100%;object-fit:cover;border-radius:12px;background:#c9dcae}
+.collage img:first-child{grid-row:span 2}
+section{padding:80px 0}
+.white{background:var(--w)}
+.leaf{background:var(--leafbg)}
+.dark{background:var(--deep);color:#e4efe0}
+.dark h2,.dark h3{color:#fff}
+h2{font-size:clamp(27px,3.4vw,38px);line-height:1.2;color:var(--deep);margin-bottom:18px}
+h3{font-size:19.5px;color:var(--tom);margin:4px 0 8px}
+.lead{max-width:800px;color:var(--mut);font-size:19px;margin-bottom:34px}
+p+p{margin-top:15px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+.cols img{width:100%;height:420px;object-fit:cover;border-radius:12px;background:#c9dcae;border-bottom:8px solid var(--lime)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.box{background:var(--w);border-radius:12px;padding:26px 24px;border-top:5px solid var(--lime);box-shadow:0 2px 12px rgba(30,58,40,.09)}
+.box p{font-size:16px;color:var(--mut);line-height:1.68}
+.box .ic{font-size:30px;display:block;margin-bottom:6px}
+.crop{background:var(--w);border-radius:12px;overflow:hidden;box-shadow:0 3px 16px rgba(30,58,40,.1)}
+.crop img{width:100%;height:210px;object-fit:cover;background:#c9dcae}
+.crop div{padding:22px}
+.crop p{font-size:16px;color:var(--mut);line-height:1.68}
+.pill{display:inline-block;background:var(--leafbg);color:var(--deep);font-size:13px;font-weight:700;padding:3px 12px;border-radius:20px;margin:8px 6px 0 0}
+.cal{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cal div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:24px 20px}
+.cal p{font-size:15.5px;color:#d3e3cd;line-height:1.65}
+.faq{max-width:900px;margin:0 auto}
+.faq details{background:var(--w);border-left:5px solid var(--sun);border-radius:6px;padding:17px 22px;margin-bottom:13px;box-shadow:0 2px 9px rgba(30,58,40,.07)}
+.faq summary{cursor:pointer;font:700 17.5px 'Trebuchet MS',Arial,sans-serif;color:var(--deep)}
+.faq p{margin-top:11px;color:var(--mut);font-size:16.5px}
+.disc{background:#fff6dd;border:1px solid #eed693;border-radius:10px;padding:28px 30px}
+.disc h2{font-size:23px;margin-bottom:10px}
+.disc p{font-size:16px;color:#4d4426;line-height:1.7}
+footer{background:#14281c;color:#b9cfbd;padding:46px 0 30px;font-size:15px}
+footer a{color:#e8f4e5;margin-right:20px}
+footer p{margin-top:14px;max-width:900px;line-height:1.6}
+@media(max-width:900px){.hero .wrap,.cols,.grid3,.grid4,.cal{grid-template-columns:1fr}.collage{grid-template-rows:160px 160px}.cols img{height:290px}section{padding:54px 0}nav a{margin:0 16px 0 0}.hero .wrap{padding-top:44px;padding-bottom:44px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a class="logo" href="#top">Plant<b>ivo</b></a>
+<nav>
+<a href="#why">Why grow</a>
+<a href="#start">Getting started</a>
+<a href="#crops">Easy crops</a>
+<a href="#care">Care</a>
+<a href="#calendar">Seasons</a>
+<a href="#faq">FAQ</a>
+</nav>
+</div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+<div class="wrap">
+<div>
+<span class="badge">Home Growing Guide</span>
+<h1>Plantivo: Grow Your Own <em>Herbs &amp; Vegetables</em> at Home</h1>
+<p>You do not need a big garden to grow fresh food. Plantivo explains, step by step and in plain language, how to start a small herb and vegetable patch on a balcony, windowsill, terrace or backyard.</p>
+<a class="btn" href="#why">Start Learning</a>
+</div>
+<div class="collage">
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=70" alt="Rows of green vegetables growing in a garden" width="800" height="414">
+<img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=600&q=70" alt="Fresh green herbs growing in small pots" width="600" height="200">
+<img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=600&q=70" alt="Leafy green plants in a home garden" width="600" height="200">
+</div>
+</div>
+</div>
+
+<section class="white" id="why">
+<div class="wrap cols">
+<div>
+<h2>Why Grow Food at Home?</h2>
+<p>Growing a few herbs or vegetables is one of the most rewarding ways to get started with gardening. Watching a seed sprout, grow leaves and eventually become something you can use in the kitchen is satisfying in a way that is hard to describe until you try it.</p>
+<p>Home growing can be as small or as large as you like. Some people begin with a single pot of basil on the kitchen windowsill. Others plan raised beds or a row of containers along a sunny wall. Either way, you decide what to grow, how to grow it and how much time to spend.</p>
+<p>Plantivo is written for beginners. The aim is to remove the guesswork by explaining the basics clearly, so you can make good choices from the first seed or seedling you plant.</p>
+</div>
+<img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=1000&q=70" alt="A person tending young plants in a vegetable garden" width="1000" height="420" loading="lazy">
+</div>
+</section>
+
+<section class="leaf" id="start">
+<div class="wrap">
+<h2>Getting Started: Four Decisions to Make First</h2>
+<p class="lead">Before buying seeds, spend a few minutes thinking about your space. These four decisions shape almost everything that follows.</p>
+<div class="grid4">
+<div class="box"><span class="ic">☀️</span><h3>Sunlight</h3><p>Most vegetables and many herbs prefer about six hours of direct sun a day. Observe your space through the day and note which spots stay bright.</p></div>
+<div class="box"><span class="ic">🪴</span><h3>Containers or Beds</h3><p>Pots, grow bags and raised beds all work. Containers suit balconies and patios, while beds suit yards with open ground.</p></div>
+<div class="box"><span class="ic">💧</span><h3>Water Access</h3><p>Plants in containers dry out faster than ground soil. Place them where watering is convenient so it becomes an easy habit.</p></div>
+<div class="box"><span class="ic">🕒</span><h3>Your Time</h3><p>Be honest about how much time you have. A few hardy crops cared for well are better than a crowded garden you cannot maintain.</p></div>
+</div>
+</div>
+</section>
+
+<section class="white" id="crops">
+<div class="wrap">
+<h2>Easy Herbs and Vegetables for Beginners</h2>
+<p class="lead">Some plants are far more forgiving than others. These popular choices are widely regarded as beginner-friendly, though results always depend on your climate and conditions.</p>
+<div class="grid3">
+<div class="crop">
+<img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=70" alt="Pots of fresh herbs on a sunny sill" width="800" height="210" loading="lazy">
+<div><h3>Kitchen Herbs</h3><p>Basil, mint, coriander, parsley and chives grow well in small pots and respond to regular harvesting by producing more leaves. Mint spreads quickly, so give it its own container.</p><span class="pill">Sunny windowsill</span><span class="pill">Small pots</span></div>
+</div>
+<div class="crop">
+<img src="https://images.unsplash.com/photo-1592419044706-39796d40f98c?auto=format&fit=crop&w=800&q=70" alt="Leafy vegetables growing in a garden bed" width="800" height="210" loading="lazy">
+<div><h3>Leafy Greens</h3><p>Lettuce, spinach and similar greens grow quickly and can be harvested leaf by leaf. They often prefer cooler weather and can tolerate a little partial shade.</p><span class="pill">Fast growing</span><span class="pill">Cool season</span></div>
+</div>
+<div class="crop">
+<img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=800&q=70" alt="Green plants growing in a sunny greenhouse garden" width="800" height="210" loading="lazy">
+<div><h3>Fruiting Vegetables</h3><p>Tomatoes, chillies and peppers reward patience with fresh produce. They need plenty of sun, steady watering and often a stake or support as they grow.</p><span class="pill">Full sun</span><span class="pill">Needs support</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="leaf" id="soil">
+<div class="wrap cols">
+<img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=1000&q=70" alt="Healthy green seedlings growing in rich soil" width="1000" height="420" loading="lazy">
+<div>
+<h2>Soil, Containers and Planting</h2>
+<p>Healthy plants begin with healthy soil. For containers, choose a quality potting mix rather than heavy garden soil, which can pack down and drain poorly. Make sure every pot has drainage holes so excess water can escape.</p>
+<p>Container size matters. Herbs and leafy greens manage in shallow to medium pots, while tomatoes and peppers need much larger containers, often several litres in volume, to support strong roots. Check seed packets or plant labels for spacing and depth guidance, as they vary by crop.</p>
+<p>You can start from seeds, which is economical and offers more variety, or from young seedlings, which saves time and can be easier for first-time growers. Whichever you choose, plant at the recommended time for your region and handle young roots gently.</p>
+</div>
+</div>
+</section>
+
+<section class="white" id="care">
+<div class="wrap">
+<h2>Everyday Care: Water, Feed and Protect</h2>
+<p class="lead">Once your plants are in, a few simple habits keep them thriving.</p>
+<div class="grid3">
+<div class="box"><h3>Water Steadily</h3><p>Check the soil with a finger. If the top inch feels dry, water deeply until it drains from the bottom. Uneven watering can stress plants and affect their growth. Morning is often the best time.</p></div>
+<div class="box"><h3>Feed Moderately</h3><p>Container plants use up nutrients over time. A balanced, plant-appropriate feed or well-rotted compost added according to the product directions helps them stay productive.</p></div>
+<div class="box"><h3>Watch for Pests</h3><p>Check leaves regularly for chewed edges, sticky residue or small insects. Catching problems early makes them easier to manage, often with simple steps like hand-removal or washing leaves.</p></div>
+<div class="box"><h3>Mulch the Soil</h3><p>A thin layer of straw or similar mulch helps keep soil moist, steadier in temperature and less weedy.</p></div>
+<div class="box"><h3>Harvest Regularly</h3><p>Picking herbs and leafy greens often encourages fresh growth. Harvest fruits when they are ready rather than leaving them too long on the plant.</p></div>
+<div class="box"><h3>Compost Kitchen Scraps</h3><p>Composting plant-based kitchen and garden waste turns it into a useful soil improver over time. Small bins or local composting schemes make this possible even in small homes.</p></div>
+</div>
+</div>
+</section>
+
+<section class="dark" id="calendar">
+<div class="wrap">
+<h2>A General Seasonal Planting Rhythm</h2>
+<p class="lead" style="color:#cfe0c9">Planting times depend heavily on where you live. Use this as a loose guide and check local advice for exact dates in your area.</p>
+<div class="cal">
+<div><h3>Spring</h3><p>Sow many leafy greens and start seeds of warm-season crops indoors. Move tender plants outside only after the last cold nights have passed.</p></div>
+<div><h3>Summer</h3><p>Focus on watering, support and harvesting. Tomatoes, peppers and herbs are typically at their most productive in the warm months.</p></div>
+<div><h3>Autumn</h3><p>Sow cool-season greens and root crops where the climate allows. Clear spent plants and add them to compost where suitable.</p></div>
+<div><h3>Winter</h3><p>Rest and plan. In mild areas, hardy greens may keep growing, and windowsill herbs can continue under good light.</p></div>
+</div>
+</div>
+</section>
+
+<section class="leaf" id="faq">
+<div class="wrap faq">
+<h2 style="text-align:center">Frequently Asked Questions</h2>
+<details><summary>What is Plantivo?</summary><p>Plantivo is an informational website that provides general guidance on growing herbs and vegetables at home. It is intended for education and inspiration.</p></details>
+<details><summary>Can I grow vegetables on a balcony?</summary><p>Yes, many herbs and vegetables grow well in containers on balconies, provided they receive enough sunlight and the containers can drain. Check any rules or weight limits that apply to your building.</p></details>
+<details><summary>How much sun do vegetables need?</summary><p>Many fruiting vegetables prefer around six or more hours of direct sun, while leafy greens and some herbs tolerate partial shade. Always check the label of each plant.</p></details>
+<details><summary>Should I start from seeds or seedlings?</summary><p>Seeds cost less and offer more choice. Seedlings save time and can be easier for beginners. Both are good options depending on your preference.</p></details>
+<details><summary>Is it safe to eat what I grow?</summary><p>Wash home-grown produce before eating and only eat plants you can identify with certainty as edible. Be cautious with soil that may be contaminated and with any pesticides, and follow product instructions carefully.</p></details>
+<details><summary>Does Plantivo sell seeds, plants or products?</summary><p>No. This page is an educational guide only and does not sell seeds, plants, products or services.</p></details>
+</div>
+</section>
+
+<section class="white">
+<div class="wrap">
+<div class="disc" id="disclaimer">
+<h2>Disclaimer</h2>
+<p>The information on this page is provided for general educational and informational purposes only. Growing results vary with climate, soil, sunlight, plant variety and individual circumstances, and Plantivo makes no guarantee of any harvest or outcome. Nothing here is professional horticultural, agricultural, nutritional, medical or food-safety advice. Always follow the instructions on any seed, fertiliser or pest-control product, identify plants correctly before eating them, and keep garden products away from children and pets. Local regulations and building rules may apply to gardening and composting in your area. Images are used for illustration only. Any third-party names mentioned belong to their respective owners. You use this information at your own discretion and risk. Please also read our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms &amp; Conditions</a>.</p>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+<strong style="color:#fff;font-size:20px">Plantivo</strong>
+<p><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a><a href="#disclaimer">Disclaimer</a></p>
+<p>&copy; 2026 Plantivo. All rights reserved. This website provides general educational information about home herb and vegetable growing and does not sell products or services.</p>
+</div>
+</footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"Plantivo – Grow Your Own Herbs and Vegetables","description":"Educational beginner's guide to growing herbs and vegetables at home in small spaces.","inLanguage":"en"}
+</script>
+</body>
+</html>
